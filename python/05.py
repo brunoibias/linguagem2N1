@@ -1,32 +1,16 @@
+letters = [" ", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+           "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+
+def translate(phrase):
+    new_phrase = []
+    phrase_list = phrase.split(',')
+    for letter in phrase_list:
+        new_phrase.append(letters[int(letter)])
+    return ''.join(new_phrase)
+
 
 while True:
-    phrase = input("Digite a mensagem para ser codificada:\n")
-    phrase = phrase.replace(" ","0")
-    phrase = phrase.replace("a","1")
-    phrase = phrase.replace("b","2")
-    phrase = phrase.replace("c","3")
-    phrase = phrase.replace("d","4")
-    phrase = phrase.replace("e","5")
-    phrase = phrase.replace("f","6")
-    phrase = phrase.replace("g","7")
-    phrase = phrase.replace("h","8")
-    phrase = phrase.replace("i","9")
-    phrase = phrase.replace("j","10")
-    phrase = phrase.replace("k","11")
-    phrase = phrase.replace("l","12")
-    phrase = phrase.replace("m","13")
-    phrase = phrase.replace("n","14")
-    phrase = phrase.replace("o","15")
-    phrase = phrase.replace("p","16")
-    phrase = phrase.replace("q","17")
-    phrase = phrase.replace("r","18")
-    phrase = phrase.replace("s","19")
-    phrase = phrase.replace("t","20")
-    phrase = phrase.replace("u","21")
-    phrase = phrase.replace("v","22")
-    phrase = phrase.replace("w","23")
-    phrase = phrase.replace("x","24")
-    phrase = phrase.replace("y","25")
-    phrase = phrase.replace("z","26")
+    phrase = input("Digite a mensagem codificada separada por vírgulas:\n")
+    print(translate(phrase))
 
-    print("a mensagem codificada é",phrase)
